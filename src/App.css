@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #282a36; /* Dracula background color */
+	scroll-behavior: smooth;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.full-page-section {
+	height: 100vh; /* Секция на весь экран */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.centered-text {
+	margin: 0;
+}
+
+.nav-dots {
+	position: fixed;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #6272a4; /* Dracula */
+	margin: 8px 0;
+	cursor: pointer;
+}
+
+.active-dot {
+	background-color: #50fa7b; /* Активная точка */
+}
+
+iframe {
+	border: none;
+}
+
+/* Цвета темы Dracula */
+h3,
+h4,
+p {
+	color: #f8f8f2;
+}

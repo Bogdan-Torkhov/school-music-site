@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    image: deusbog/school-music-site
+    container_name: school_music_site
+    restart: always
+    ports:
+      - '7000:7000' # Открываем порт 3000 на хосте и мапим его на порт 3000 внутри контейнера
+    environment:
+      NODE_ENV: production # Переменная окружения для production режима
+
+    networks:
+      - webnet # Указываем сеть для работы контейнера
+
+networks:
+  webnet:
+    driver: bridge # Используем мостовую сеть для общения контейнеров между собой
